@@ -20,6 +20,9 @@ html {
 body {
   font-family: "Instrument Serif", serif;
   font-weight: 400;
+  font-size: 1.15rem;
   font-style: normal;
   overflow-x: hidden;
+  background-color: #0f0f0f;
+  color:var(--fg);
 }
