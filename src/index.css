@@ -25,6 +25,11 @@ body {
   overflow-x: hidden;
   /* background-color: #0f0f0f;
   color:var(--fg); */
+  background-color: #d4d4d4;
+}
 
-  background-color: #ebebeb;
+img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }
