@@ -4,8 +4,14 @@
 @import "tailwindcss";
 
 :root {
-  --bg: #0f0f0f;
-  --fg: #f2f0e6;
+  /* Fonts */
+  --font-heading: "Instrument Serif", serif;
+  --font-body: "Inter", sans-serif;
+  --font-preloader: "Sekuya", system-ui;
+  --font-preloader-jap: "Hina Mincho", serif;
+
+  /* Background */
+  --bg-color: #d4d4d4;
 }
 
 *,
@@ -19,24 +25,28 @@ html {
 }
 
 body {
-  font-family: "Instrument Serif", serif;
+  font-family: var(--font-body);
   font-weight: 400;
   font-size: 1.15rem;
   font-style: normal;
   overflow-x: hidden;
-  /* background-color: #0f0f0f;
-  color:var(--fg); */
-  background-color: #d4d4d4;
+  background-color: var(--bg);
+}
+
+nav {
+  font-family: var(--font-heading);
+}
+
+.preloader {
+  font-family: "Sekuya", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  background: #00008b;
+  color: #d4d4d4;
 }
 
 img {
   width: 100%;
   height: auto;
   object-fit: cover;
-}
-
-.preloader-text {
-  font-family: "Sekuya", system-ui;
-  font-weight: 400;
-  font-style: normal;
 }
